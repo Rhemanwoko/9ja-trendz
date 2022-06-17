@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/75fb28e126.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+        <!-- Link Swiper's CSS -->
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <title>9ja Trendz</title>
+</head>
+<body>
+    <div id="header" class="mb-5">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <div class="container">
+              <a class="navbar-brand text-success fw-bold fs-4" href="index.html">9ja<span class="text-dark fst-italic">Trendz</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <a href="trendz.html">
+                        <button class="btn btn-success ms-lg-5" type="submit">Join the <span
+                            class="fst-italic"
+                            >Trendz</span>
+                          </button>
+                    </a>
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item fw-bolder ms-lg-3">
+                      <a class="nav-link active" aria-current="page" href="contact.html">Contact 9ja <span
+                        class="fst-italic"
+                        >Trendz</span></a>
+                    </li>
+                  </ul>
+                </div> 
+            </div>
+        </nav>
+    </div>
+    <section id="CreatePost" class="pt-lg-5 pt-4 pt-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="text-success">Write a Take..</h1>
+                    <form action="" id="post-form">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Take Title</label>
+                            <input type="text" class="form-control" id="title"
+                                placeholder="enter a title..">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Your Take</label>
+                            <textarea class="form-control" id="body" rows="3" placeholder="write your take here..">
+                            </textarea>
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn btn-success" type="submit">Create Take</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-12 none">
+                    <h1 class="text-end text-bg-success mb-0">Hot Topics..</h1>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper h-100">
+                        <div class="swiper-wrapper h-100">
+                        <div class="swiper-slide h-100">
+                            <img src="./img/download10.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide h-100">
+                            <img src="./img/5.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide h-100">
+                            <img src="./img/download2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide h-100">
+                            <img src="./img/download12.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide h-100">
+                            <img src="./img/download3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide h-100">
+                            <img src="./img/download4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Trending" class="mt-lg-4 mt-md-4 mt-4 pb-3">
+        <div class="container">
+            <h1 class="text-center mb-4">Trending <span class="fst-italic">Trendz...</span></h1>
+            <div class="row" id="post-holder">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <p class="none-text">1</p>
+                                <h6 id="post-title" class="text-uppercase fw-bold">post title</h6>
+                                <p id="post-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo cupiditate laborum,
+                                soluta debitis iure dolore iusto adipisci optio ipsam, sint amet dolorem possimus
+                                voluptatum. Voluptate cumque possimus autem alias maiores.</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-end">
+                                <button class="btn btn-outline-dark">view<i class="fa-solid fa-eye fa-1x ms-1"></i></button>
+                                <button class="btn btn-outline-success">Update<i class="fa-solid fa-pen-to-square ms-1"></i></button>
+                                <button class="btn btn-outline-danger">Delete <i class="fa-solid fa-trash-can ms-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        autoplay: {
+           delay: 2500,
+           disableOnInteraction: false,
+         },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

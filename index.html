@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>9ja Trendz</title>
+</head>
+<body>
+    <div id="header">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <div class="container">
+              <a class="navbar-brand text-success fw-bold fs-4" href="#header">9ja<span class="text-dark fst-italic">Trendz</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <a href="trendz.html" class="nav-item fw-bolder">
+                    <button class="btn btn-success ms-lg-5" type="submit">Join the <span
+                        class="fst-italic"
+                        >Trendz</span>
+                      </button>
+                  </a>
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item fw-bolder ms-lg-3">
+                      <a class="nav-link active" aria-current="page" href="contact.html">Contact 9ja <span
+                        class="fst-italic"
+                        >Trendz</span></a>
+                    </li>
+                  </ul>
+                </div> 
+            </div>
+        </nav>
+    </div>
+    <div class="top-hero-section pt-4 pt-lg-5 pb-lg-2 pb-sm-1 pb-md-1">
+        <div class="container pb-2 pb-lg-2">
+            <div class="text-center pt-5">
+                <h1 class="text-success display-1 fw-bold">9ja</h1>
+                <h1 class="text-white display-1 fw-bold"><i>Trendz</i></h1>
+                <p class="text-white">Nigeria's first Incognito Chat Room and Online space.</p>
+            </div>
+        </div>
+        <section class="cards-section mt-lg-1">
+            <div class="container h-100">
+                <div class="swiper mySwiper h-100">
+                    <div class="swiper-wrapper h-100 pb-lg-4 pb-3 pb-md-3">
+                        <div class="swiper-slide h-100 d-flex justify-content-center">
+                            <img src="./img/download10.jpg" class="img-fluid h-100" alt="">
+                        </div>
+                        <div class="swiper-slide h-100 d-flex justify-content-center">
+                            <img src="./img/5.jpg" class="img-fluid h-100" alt="">
+                        </div>
+                        <div class="swiper-slide h-100 d-flex justify-content-center">
+                            <img src="./img/download2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide h-100 d-flex justify-content-center">
+                          <img src="./img/download12.jpg" class="img-fluid" alt="">
+                      </div>
+                        <div class="swiper-slide h-100 d-flex justify-content-center">
+                            <img src="./img/download3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide h-100 d-flex justify-content-center">
+                            <img src="./img/download4.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <a href="trendz.html">
+                        <button type="button" class="btn btn-success py-3 px-4">Join the <span
+                          class="fst-italic"
+                          >Trendz</span></button>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ 
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+         // slidesPerView: 3,
+         spaceBetween: 20,
+         autoplay: {
+           delay: 2500,
+           disableOnInteraction: false,
+         },
+         pagination: {
+           el: ".swiper-pagination",
+           clickable: true,
+         },
+         breakpoints: {
+           426: {
+             slidesPerView: 1,
+             spaceBetween: 10,
+           },
+           768: {
+             slidesPerView: 2,
+             spaceBetween: 20,
+           },
+           1024: {
+             slidesPerView: 3,
+             spaceBetween: 30,
+           },
+         },
+       });
+     </script>
+     <script src="./js/bootstrap.min.js"></script>
+     <script src="./js/bootstrap.js"></script>
+</body>
+</html>
